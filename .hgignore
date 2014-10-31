@@ -1,0 +1,4 @@
+syntax: glob
+.localhistory
+packages
+*.userprefs
