@@ -8,7 +8,6 @@ namespace LoggingDecorator
 
         public virtual void Echo(string str)
         {
-            Str = str;
             Console.WriteLine(str);
             throw new Exception("except me!");
         }
