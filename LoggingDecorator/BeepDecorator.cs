@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LoggingDecorator
 {
-    class TimerDecorator<TCommand> : Decorator<TCommand>, ICommandHandler<TCommand>
+    class BeepDecorator<TCommand> : Decorator<TCommand>, ICommandHandler<TCommand>
     {
-        public TimerDecorator(ICommandHandler<TCommand> decorated) : base(decorated){}
+        public BeepDecorator(ICommandHandler<TCommand> decorated) : base(decorated){}
 
         public void Execute(TCommand command)
         {

@@ -38,7 +38,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TimerDecorator.cs" />
+    <Compile Include="BeepDecorator.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="EchoCommand.cs" />
     <Compile Include="EchoCommandLogDecorator.cs" />
