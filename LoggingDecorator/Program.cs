@@ -22,7 +22,7 @@ namespace LoggingDecorator
             ICommandHandler<EchoCommand> handler2 = new BeepDecorator<EchoCommand>(handler1);
             handler2.Execute(command1);
 
-            Console.WriteLine("After");
+            Console.WriteLine("After exception");
             Console.ReadLine();
         }
     }
