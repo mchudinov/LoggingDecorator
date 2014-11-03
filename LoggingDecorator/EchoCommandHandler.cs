@@ -1,10 +1,18 @@
-﻿namespace LoggingDecorator
+﻿using System;
+
+namespace LoggingDecorator
 {
-    class EchoCommandHandler : ICommandHandler<EchoCommand>
+    class EchoCommandHandler : ICommandHandler<EchoCommandData>
     {
-        public void Execute(EchoCommand command)
+        public void Execute(EchoCommandData data)
         {
-            command.Echo(command.Str);
+            Echo(data.Str);
+        }
+
+        void Echo(string str)
+        {
+            Console.WriteLine(str);
+            throw new Exception("except me!");
         }
     }
 }

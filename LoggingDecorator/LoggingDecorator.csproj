@@ -41,6 +41,7 @@
     <Compile Include="BeepDecorator.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="EchoCommand.cs" />
+    <Compile Include="EchoCommandData.cs" />
     <Compile Include="EchoCommandLogDecorator.cs" />
     <Compile Include="EchoCommandHandler.cs" />
     <Compile Include="LogDecorator.cs" />
