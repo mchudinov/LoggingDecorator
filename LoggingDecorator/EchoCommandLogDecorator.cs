@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Text;
 using log4net;
 
 namespace LoggingDecorator
 {
     public class EchoCommandLogDecorator : EchoCommand
     {
-        private readonly EchoCommand decorated;
+        readonly EchoCommand decorated;
         static readonly ILog log = LogManager.GetLogger(typeof(Program));
 
         public EchoCommandLogDecorator(EchoCommand decorated)
